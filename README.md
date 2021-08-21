@@ -14,7 +14,7 @@ Linux stores the CPU's thermal information in "/sys/devices/platform/coretemp.0/
 
 	Ex. "cat /sys/class/thermal/thermal_zone0/temp" => "46000" => 46 celsius
 
-After obtaining the values of each core it will be time to sort them based on these temperature ranges:
+After obtaining the values of each core it will be time to sort them based on these celsius temperature ranges:
 
 	Low: 0 - 59
 	Moderate: 60 - 79
