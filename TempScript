@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true; do
+	python3 TempScript.py
+	sleep 3
+done
