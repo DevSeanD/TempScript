@@ -1,0 +1,6 @@
+#!/bin/bash
+
+while true; do
+	python3 /usr/local/bin/tempscript.py
+	sleep 4
+done
