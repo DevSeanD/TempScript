@@ -24,4 +24,4 @@ This program relies on the python library colorama to add color to the terminal.
 It can be manually installed with the command:
 	"pip install colorama"
 
-Or Via the install script.
+Or Via the install script
