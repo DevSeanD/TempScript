@@ -1,4 +1,4 @@
 #!/bin/bash
 
 sudo pip install colorama
-sudo cp TempScript TempScript.py /usr/local/bin
+sudo cp tempscript tempscript.py /usr/local/bin
