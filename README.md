@@ -3,8 +3,8 @@ TempScript is an easy to use, easy to install, and a modular, temperature monito
 
 Installation:
 
-	1.Run the command "git clone <url>"
-	2.Run the install script with "sudo ./install"
+	1.Run the command "git clone https://github.com/DevSeanD/TempScript.git"
+	2.Run the install script with "sudo ./install.sh"
 	3.Run "TempScript" to test if installation was successful
 
 
