@@ -12,7 +12,7 @@ Before creating an implementation of the script an understanding of the way Linu
 
 Linux stores the CPU's thermal information in "/sys/devices/platform/coretemp.0/hwmon/hwmon5/tempX_input". This file reports the temperature in celsius and multiplied by 1000:
 
-	Ex. "cat /sys/class/thermal/thermal_zone0/temp" => "46000" => 46 celsius
+	Ex. "cat /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input" => "46000" => 46 celsius
 
 After obtaining the values of each core it will be time to sort them based on these celsius temperature ranges:
 
