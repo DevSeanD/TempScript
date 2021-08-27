@@ -8,9 +8,9 @@ def colorTemp(coreTemp):
     if coreTemp <= 59:
         print(f'CPU: {Fore.GREEN}' + str(coreTemp) + u'\N{DEGREE SIGN}' + 'C',end='\r')
     if coreTemp >= 60 and coreTemp <= 79:
-        print(f'{Fore.YELLOW}' + str(coreTemp) + u'\N{DEGREE SIGN}' + 'C',end='\r')
+        print(f'CPU {Fore.YELLOW}' + str(coreTemp) + u'\N{DEGREE SIGN}' + 'C',end='\r')
     if coreTemp >= 80:
-        print(f'{Fore.RED}' + str(coreTemp) + u'\N{DEGREE SIGN}' + 'C',end='\r')
+        print(f'CPU {Fore.RED}' + str(coreTemp) + u'\N{DEGREE SIGN}' + 'C',end='\r')
 
 def main():
     while(True):
