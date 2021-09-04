@@ -1,5 +1,5 @@
 # TempScript
-TempScript is an easy to use, easy to install, and lightweight, temperature monitoring script
+TempScript is an easy to use, easy to install, and lightweight, temperature monitoring script for Linux Machines
 
 Installation:
 
