@@ -33,4 +33,5 @@ Or Via the install script
 TempScript is also a very light weight program! Here is a example of a resource use:
 	*This htop readout was captured on a 2011 Lenovo Thinkpad X220T with an i5 dual core CPU and 8gb of RAM*
 	
-![htop-resource-use](https://user-images.githubusercontent.com/39039620/138376723-57206274-f260-4d3e-bb8a-54de76505019.png)
+![htop-resource-use](https://user-images.githubusercontent.com/39039620/138452006-9b3ad16a-5103-4e6d-9812-e52759dfe3f5.png)
+
