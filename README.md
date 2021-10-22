@@ -29,3 +29,7 @@ It can be manually installed with the command:
 	"pip install colorama"
 
 Or Via the install script
+
+TempScript is also a very light weight program! Here is a example of a resource use:
+	*This htop readout was captured on a 2011 Lenovo Thinkpad X220T with an i5 dual core CPU and 8gb of RAM*
+	![htop-resource-use](https://user-images.githubusercontent.com/39039620/138376465-fb3cece8-e9e2-44b1-829d-62d7d300a3d4.png)
