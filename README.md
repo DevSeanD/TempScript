@@ -7,6 +7,7 @@ Installation:
 	2.Run the command "chmod +x tempscript"
 	3.Run the command "chmod +x install.sh"
 	4.Run "sudo tempscript" to test if installation was successful
+	5. After the initial "sudo tempscript" command you will be able to simply run it using the "tempscript" command
 
 
 Before creating an implementation of the script an understanding of the way Linux store and measures CPU temperatures is needed. 
