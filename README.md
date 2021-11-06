@@ -32,7 +32,7 @@ This program relies on the python library colorama to add color to the terminal.
 
 Or Via the install script
 
-### TempScript is also a very light weight program! Here is a example of a resource use:
+### TempScript is also a very light weight program! Here is an example of a resource use:
 
 	*This htop readout was captured on a 2011 Lenovo Thinkpad X220T with an i5 dual core CPU and 8gb of RAM*
 	
