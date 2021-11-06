@@ -17,14 +17,26 @@ def colorTemp(coreTemp):
     print(displayString,end='\r')
 
 def main():
-    core0 = open("/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input")
-    core1 = open("/sys/devices/platform/coretemp.0/hwmon/hwmon5/temp3_input")
-    core0Temp = int(core0.read())
-    core1Temp = int(core1.read())
+    # Scan for core quantity
+    coreTempList = [] # Stores core temperature values
 
-    coreAvgTemp = (core0Temp + core1Temp) / 2
-    colorTemp(coreAvgTemp / 1000)
-    time.sleep(1)
+    for x in range(0,127): # Supports up to 128 cores
+        try: 
+            with open("/sys/class/thermal/thermal_zone{}/temp".format(x)) as file:
+                coreTempList.append(float(file.read()))
+        except: 
+            pass
     
+    coreAvgTemp = 0 # Store the result after average calculation
+    numOfCores = len(coreTempList)
+
+    for temp in coreTempList:
+        coreAvgTemp += temp
+    
+    coreAvgTemp = coreAvgTemp / numOfCores
+    colorTemp(coreAvgTemp / 1000)
+
+    time.sleep(1) 
+
 if __name__ == "__main__":
     main()
