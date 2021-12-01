@@ -12,9 +12,9 @@ TempScript is an easy to use, easy to install, and lightweight, temperature moni
 
 Before creating an implementation of the script an understanding of the way Linux store and measures CPU temperatures is needed. 
 
-### Linux stores the CPU's thermal information in "/sys/devices/platform/coretemp.0/hwmon/hwmon5/tempX_input". This file reports the temperature in celsius and multiplied by 1000:
+### Linux stores the CPU's thermal information in "/sys/class/thermal/thermal_zone<CoreNumber>/temp". This file reports the temperature in celsius and multiplied by 1000:
 
-	Ex. "cat /sys/devices/platform/coretemp.0/hwmon/hwmon5/temp2_input" => "46000" => 46 celsius
+	Ex. "cat /sys/class/thermal/thermal_zone<CoreNumber>/temp" => "46000" => 46 celsius
 
 ### After obtaining the values of each core it will be time to sort them based on these celsius temperature ranges:
 
