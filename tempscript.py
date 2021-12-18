@@ -11,8 +11,9 @@ def colorTemp(coreTemp):
     if coreTemp >= 60 and coreTemp <= 79:
         displayString = f'CPU: {Fore.YELLOW}' + str(coreTemp)
     if coreTemp >= 80:
-        displayString = f'CPU: {Fore.RED}' + str(coreTemp) 
+        displayString = f'CPU: {Fore.RED}' + str(coreTemp)
 
+    displayString = displayString[0:15:1]
     displayString += u'\N{DEGREE SIGN}' + 'C'
     print(displayString,end='\r')
 
