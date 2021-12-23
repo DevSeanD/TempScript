@@ -2,6 +2,11 @@ import time
 import sys
 from colorama import Fore, Style
 
+"""
+TODO: Fix the display of core temps with no digit in the hundreds place
+"""
+
+
 def colorTemp(coreTemp):
     sys.stdout.flush()
     displayString = ""
