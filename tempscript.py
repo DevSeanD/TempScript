@@ -10,7 +10,8 @@ TODO: Fix the display of core temps with no digit in the hundreds place
 def colorTemp(coreTemp):
     sys.stdout.flush()
     displayString = ""
-
+    if len(str(coreTemp)) == 4:
+        coreTemp += 0
     if coreTemp <= 59:
         displayString = f'CPU: {Fore.GREEN}' + str(coreTemp)
     if coreTemp >= 60 and coreTemp <= 79:
@@ -37,7 +38,7 @@ def main():
     numOfCores = len(coreTempList)
 
     for temp in coreTempList:
-        coreAvgTemp += temp
+        coreAvgTemp += float(temp)
     
     coreAvgTemp = coreAvgTemp / numOfCores
     colorTemp(coreAvgTemp / 1000)
