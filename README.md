@@ -4,11 +4,12 @@ TempScript is an easy to use, easy to install, and lightweight, temperature moni
 ## Installation:
 
 	1.Run the command "git clone https://github.com/DevSeanD/TempScript.git"
-	2.Run the command "chmod +x tempscript"
-	3.Run the command "chmod +x install.sh"
-	4.Run "sudo tempscript" to test if installation was successful
-	5.After the initial "sudo tempscript" command you will be able to simply run it using the "tempscript" command
-
+	2.Run the command "cd TempScript"
+	3.Run the command "sudo chmod +x tempscript"
+	4.Run the command "sudo chmod +x install.sh"
+	5.Run the command "./install.sh"
+	6.Run "sudo tempscript" to test if installation was successful
+	7.After the initial "sudo tempscript" command you will be able to simply run it using the "tempscript" command
 
 Before creating an implementation of the script an understanding of the way Linux store and measures CPU temperatures is needed. 
 
