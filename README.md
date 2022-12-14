@@ -1,5 +1,5 @@
 # TempScript
-TempScript is an easy to use, easy to install, and lightweight, temperature monitoring script for Linux Machines
+TempScript is an easy to use, easy to install, and lightweight, temperature monitoring script for Linux machines
 
 ## Installation:
 
@@ -13,7 +13,7 @@ TempScript is an easy to use, easy to install, and lightweight, temperature moni
 
 Before creating an implementation of the script an understanding of the way Linux store and measures CPU temperatures is needed. 
 
-### Linux stores the CPU's thermal information in "/sys/class/thermal/thermal_zone<CoreNumber>/temp". This file reports the temperature in celsius and multiplied by 1000:
+### In most cases Linux stores the CPU's thermal information in "/sys/class/thermal/thermal_zone<CoreNumber>/temp". This file reports the temperature in celsius and is multiplied by 1000:
 
 	Ex. "cat /sys/class/thermal/thermal_zone<CoreNumber>/temp" => "46000" => 46 celsius
 
@@ -33,7 +33,7 @@ This program relies on the python library colorama to add color to the terminal.
 
 Or Via the install script
 
-### TempScript is also a very light weight program! Here is an example of a resource use:
+### TempScript is also a very light weight program! Here is an example of its resource use:
 
 	*This htop readout was captured on a 2011 Lenovo Thinkpad X220T with an i5 dual core CPU and 8gb of RAM*
 	
